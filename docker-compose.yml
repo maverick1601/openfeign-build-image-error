@@ -1,0 +1,8 @@
+version: '3'
+services:
+    demo:
+        image: "dxfrontiers/demo-build-image:latest"
+        ports:
+            - "8080:8080"
+        environment:
+            - SERVER_PORT=8080

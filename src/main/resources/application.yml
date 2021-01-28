@@ -1,0 +1,13 @@
+spring:
+  cloud:
+    discovery:
+      client:
+        simple:
+          instances:
+            sample-feign:
+              - uri: http://www.google.com
+    loadbalancer:
+      cache:
+        enabled: false
+      retry:
+        enabled: false
